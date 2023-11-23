@@ -1,4 +1,4 @@
-import { StatisticsItem } from './Statistics.styled';
+import css from './Statistics.module.css';
 
 export const Statistics = ({
   good,
@@ -9,11 +9,11 @@ export const Statistics = ({
 }) => {
   return (
     <>
-      <StatisticsItem>Good: {good}</StatisticsItem>
-      <StatisticsItem>Neutral: {neutral}</StatisticsItem>
-      <StatisticsItem>Bad: {bad}</StatisticsItem>
-      <StatisticsItem>Total: {total}</StatisticsItem>
-      <StatisticsItem>Positive feedback: {positivePercentage}%</StatisticsItem>
+      <p className={css.text}>Good: {good}</p>
+      <p className={css.text}>Neutral: {neutral}</p>
+      <p className={css.text}>Bad: {bad}</p>
+      <p className={css.text}>Total: {total}</p>
+      <p className={css.text}>Positive feedback: {positivePercentage}%</p>
     </>
   );
 };
