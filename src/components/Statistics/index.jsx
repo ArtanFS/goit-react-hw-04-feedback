@@ -1,7 +1,8 @@
 import css from './Statistics.module.css';
 
 export const Statistics = ({ value, total, positivePercentage }) => {
-  const { good, neutral, bad } = value;
+  const [good, neutral, bad] = value;
+
   return (
     <>
       <p className={css.text}>Good: {good}</p>
